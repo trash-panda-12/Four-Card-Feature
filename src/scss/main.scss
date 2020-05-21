@@ -1,0 +1,161 @@
+@import 'colors';
+
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins" , sans-serif;
+    font-size:15px;
+}
+
+body {
+    background:$veryLightGrey;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 10vh auto;
+    padding: 30px;
+}
+
+
+
+
+//Heading
+
+.title {
+
+    text-align: center;
+
+    h1:nth-child(1) {
+        color: $veryDarkBlue;
+        font-weight: 200;
+    }
+
+    h1:nth-child(2) {
+        color: $veryDarkBlue;
+        font-weight: 600;
+    }
+
+}
+
+.title-description {
+    
+    text-align:center;
+    width:60%;
+    margin:20px auto;
+    
+
+
+    p {       
+        color:$grayishBlue;
+    }
+}
+
+
+
+
+
+
+
+
+//Cards & Grids
+
+
+
+.grid {
+    display:grid;
+    grid-template-columns : repeat(3, minmax(220px, 280px));
+    grid-template-rows: minmax(200px, 1fr) minmax(200px, 1fr);
+    justify-content: center;
+    grid-gap : 30px;
+    margin:40px 40px;
+}
+
+.card {
+
+    border-radius: 6px;
+    min-height:200px;
+    box-shadow: 1px 12px 10px rgba(76, 78, 97, 0.3);
+    ;
+    padding:20px 20px;
+
+    h3 {
+        color:$veryDarkBlue;
+        padding:0 10px;
+    }
+    
+    p {
+        color:$grayishBlue;
+        font-size:0.75rem;
+        line-height:1.4;
+        margin-top:4px;
+        margin-bottom:20px;
+        width:100%;
+        padding:0 10px;
+    }
+
+    .imagebox {
+
+    
+        text-align:right;
+        display:flex;
+        justify-content:flex-end;
+        align-content: flex-end;
+        
+        img {
+            margin-top:10px;
+        }
+    }
+
+
+}
+
+.supervisor {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: center;
+    
+    border-top: 3px solid $design-cyan;
+    
+    
+}
+
+.team-builder {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-top: 3px solid $design-red;
+}
+
+.karma{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-top: 3px solid $design-orange;
+}
+
+.calculator {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: center;
+    border-top: 3px solid $design-blue;
+    
+};
+
+
+
+
+
+
+@import 'breakpoints'
